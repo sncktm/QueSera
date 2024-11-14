@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+/*フォントの読み込み*/
+@font-face {
+	font-family: "title_font1";
+	src: url("../font/CRAYA___.TTF") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "title_font2";
+	src: url("../font/crayon_1-1.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "title_font3";
+	src: url("../font/chihayaCrayonRE-free.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (max-width:768px) {
+	.logo {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	nav ul {
+		margin-left: 0;
+	}
+
+	.main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.title h1 {
+		font-size: 1.5rem;
+	}
+
+}

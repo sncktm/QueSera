@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#downloadLink {
+    width: 350px;
+    background-color: rgb(128, 255, 255);
+}
+
+header {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.logo {
+    flex-shrink: 0;
+    margin-left: 25%;
+    margin-right: 100px;
+    margin-right: -14%;
+    background-color: transparent;
+    /* 透過が確認されない場合、この行は削除しても大丈夫です */
+    display: block;
+    /* 透過画像を適切に表示するために追加 */
+}
+
+.title {
+    text-align: center;
+    font-family: "title_font1", "title_font2", sans-serif;
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: -90%;
+
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+.item {
+    color: black;
+    font-size: 120%;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: "title_font1", "title_font2", sans-serif;
+}
+
+.item:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.setsumei {
+    margin-bottom: 20px;
+    font-family: "title_font1", "title_font2", sans-serif;
+    font-size: larger;
+}
+
+.enikki {
+    text-align: center;
+}
+
+textarea {
+    display: block;
+    margin: 10px auto;
+}
+
+#imageInput {
+    display: block;
+    margin: 10px auto;
+    width: 350px;
+    height: 40.91px;
+    color: #f8f8f8;
+    font-size: 120%;
+    background-color: #432;
+    border: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding: 7px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: "title_font1", "title_font2", sans-serif;
+}
+
+footer {
+    background: #432;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+canvas {
+    border: 0px solid black;
+}
+
+.buttons {
+    color: #f8f8f8;
+    font-size: 120%;
+    background-color: #432;
+    border: 0px;
+    width: 390px;
+    padding: 7px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: "title_font1", "title_font2", sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    flex: 3;
+    widows: 40%;
+    margin-right: 60px;
+    padding-right: 20px;
+}
+
+aside {
+    flex: 1;
+    width: 40%;
+    align-items: center;
+    /* コンテンツを中央に配置 */
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+
+    #imageInput,
+    #downloadLink {
+        width: 100%;
+    }
+
+    .buttons {
+        width: 360px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    canvas {
+        width: 100%;
+    }
+
+    header {
+        /* flex-direction: column; */
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    nav {
+        order: 2;
+        width: 100%;
+        text-align: right;
+    }
+
+    .title {
+        font-size: 14px;
+        /* 文字サイズを小さくする */
+        order: 1;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    nav ul {
+        display: flex;
+        /* ulを表示 */
+        flex-direction: column;
+        /* ulの子要素を縦並びに変更 */
+        margin-top: 20px;
+        padding: 0;
+        margin-right: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    /* article {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        margin-bottom: 20px;
+    } */
+    article,
+    aside {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        /* これにより、articleとasideが100%幅で表示されます */
+    }
+}

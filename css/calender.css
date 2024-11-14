@@ -1,0 +1,219 @@
+/*フォントの読み込み*/
+@font-face {
+    font-family: "title_font1";
+    src: url("../font/CRAYA___.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "title_font2";
+    src: url("../font/crayon_1-1.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "title_font3";
+    src: url("../font/chihayaCrayonRE-free.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "title_font1", "title_font2", "title_font3";
+
+}
+
+
+
+th,
+td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+    font-family: "title_font1", "title_font2", "title_font3";
+
+}
+
+th {
+    background-color: #e2dc29;
+}
+
+h1 {
+    font-family: "title_font1", "title_font2", "title_font3";
+    text-align: center;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #f8f8f8;
+    /* 背景色 */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    /* 縦方向の中央揃え */
+    justify-content: space-between;
+    /* 子要素間にスペースを均等に配置 */
+    box-sizing: border-box;
+}
+
+.logo {
+    flex-shrink: 0;
+    margin-left: 25%;
+    margin-right: -14%;
+    background-color: transparent;
+    /* 透過が確認されない場合、この行は削除しても大丈夫です */
+    display: block;
+    /* 透過画像を適切に表示するために追加 */
+}
+
+.title {
+    text-align: center;
+    font-family: "title_font1", "title_font2", sans-serif;
+    flex-grow: 1;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: -90%;
+}
+
+.nav ul li {
+    margin-left: 20px;
+    text-decoration: none;
+    /*リンクの下線を削除*/
+}
+
+
+.bunkatsu li {
+    display: inline;
+}
+
+.item {
+    color: black;
+    font-size: 120%;
+    text-decoration: none;
+    /*リンクの下線を削除*/
+    border-radius: 10px;
+    /*角を丸くする*/
+    font-family: "title_font1", "title_font2", sans-serif;
+
+}
+
+.item:hover {
+    background-color: rgb(207, 207, 207);
+    /*カーソルがのった時に色を濃くする*/
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* コンテンツを中央に配置 */
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    /* テキスト要素を中央揃え */
+}
+
+.setsumei {
+    margin-bottom: 20px;
+    /* 説明文の下に少し余白を追加 */
+}
+
+.enikki {
+    text-align: center;
+    /* キャンバスやテキストエリアを中央に配置 */
+}
+
+textarea {
+    display: block;
+    margin: 10px auto;
+    /* テキストエリアを中央に配置 */
+}
+
+#imageInput {
+    display: block;
+    margin: 10px auto;
+    /* ファイル入力を中央に配置 */
+}
+
+
+footer {
+    background: #432;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+canvas {
+    border: 0px solid black;
+}
+
+.buttonds {
+    color: #f8f8f8;
+    font-size: 120%;
+    background-color: #432;
+    border: 0px;
+    padding: 7px 20px;
+    text-decoration: none;
+    /*リンクの下線を削除*/
+    border-radius: 20px;
+    /*角を丸くする*/
+    font-family: "title_font1", "title_font2", sans-serif;
+}
+
+#hzn {
+    font-family: "title_font1", "title_font2", sans-serif;
+
+}
+
+footer {
+    background: #432;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}

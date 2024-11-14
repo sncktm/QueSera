@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>QueSera</title>
+    <meta name="author" content="誰でも簡単に推し活絵日記が作成できるWebサイトです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="js/script.js"></script>
+    <script src="js/sendImageToServlet.js" defer></script>
+    <script src="js/canvasDrawing.js" defer></script> <!-- JavaScriptファイルを読み込む -->
+
+    <style>
+        canvas {
+            border: 0px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- ロゴ -->
+        <img class="logo" src="img/logo.png" alt="Que Sera" width=100px />
+        <!-- タイトル(Que Sera) -->
+        <div class="title" style="text-align: center">
+            <h2>推し活絵日記作成アプリ</h2>
+            <h1>Que Sera</h1>
+        </div>
+
+        <!-- リスト・カレンダー・ログイン -->
+        <nav>
+            <ul>
+                <li><a class="item" href="">リスト</a></li>
+                <li><a class="item" href="">カレンダー</a></li>
+                <li><a class="item" href="">ログイン</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 絵日記作成 -->
+    <div class="width">
+        <div class="setsumei">
+            <p>Webサイト上で簡単に絵日記が作成できるサイト</p>
+            <p>あなたの推し活を手軽に発信！</p>
+        </div>
+
+        <div class="main">
+            <article>
+                <div class="enikki">
+                    <canvas id="canvas" width="400" height="600"></canvas>
+                </div>
+                <br><br>
+            </article>
+
+            <aside>
+                <!-- カラーピッカーとスライダーを追加 -->
+                <div class="controls">
+                    <label for="colorPicker">色:</label> <input type="color" id="colorPicker" value="#000000"> <label
+                        for="lineWidth">線の太さ:</label>
+                    <input type="range" id="lineWidth" min="1" max="10" value="3">
+                </div>
+                <br>
+
+                <textarea name="text" placeholder="文字を入力" style="width: 400px; height: 45px;" required></textarea>
+                <br>
+                <input class="button" type="file" id="imageInput" accept="image/*">
+                <br>
+                <button class="buttons" id="saveButton">文字の挿入</button>
+                <br>
+                <br>
+
+
+                <!--  <h1 id="hzn">画像とテキストをPNGファイルに保存</h1> -->
+                <button class="buttons" onclick="createImage()">PNGファイルを作成</button>
+                <br><br>
+                <a class="buttons" id="downloadLink" style="display: none;">ダウンロード</a>
+                <br>
+<!--                <button class="buttons" onclick="sendImageToServlet()">サーブレットに画像を送信</button>-->
+                <br>
+                <br>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <p>
+                <small>&copy; MARs</small>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
